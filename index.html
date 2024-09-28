@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aneis Sofea - Front-End Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="main-section ">     <!-- container text-center -->
+        <h2 class="title about">about</h2>
+        <h1 class="main-title">ANEIS SOFEA</h1>
+        <div class="description-container">
+            <p class="description">A FRONT-END DEVELOPER WITH A PASSION FOR CODING AND CREATING SEAMLESS USER EXPERIENCE.
+                <br/><br/>
+                A LITTLE BACKGROUND ABOUT ME, I GRADUATED WITH MECHANICAL ENGINEERING DEGREE AND I HAD MY FAIR INTEREST IN CYBERSECURITY BEFORE MY DEGREE. ALTHOUGH I PURSUED A DIFFERENT PATH, WORKING IN AUTOMOTIVE AND ART INDUSTRIES, MY PASSION FOR TECH REIGNITED AND IT LED ME TO DIVE INTO FRONT-END PROGRAMMING FIRST.
+                <br/><br/>
+                THIS SITE SERVES AS A CANVAS FOR ME TO EXPERIMENT AND I’M PLANNING TO ADD MORE INTERACTIVE ELEMENTS AS I CONTINUE TO GROW. WITH MY PERSEVERANCE, PROFESSIONALISM, AND EAGERNESS TO LEARN, I AM CONFIDENT I CAN CONTRIBUTE TO MEANINGFUL PROJECTS. LET’S COLLABORATE AND BRING CREATIVE IDEAS TO LIFE!
+                <br/></p>
+                <div class="description-cta">
+                    <a href="#" class="btn btn-danger" target="_blank">Download Resume</a>
+                    <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank"><img class="description-logo" src="image\linkedin-logo.png"/></a>
+                    <a href="https://github.com/aneissofea" target="_blank"><img class="description-logo" src="image\github-logo.png"/></a>
+                </div>
+            </div>
+        <img class="sphere-png" src="image/sphere.png"/>
+    </section>
+
+    <section class="projects-section container" id="projects">    <!-- container -->
+        <h2 class="title projects">projects</h2>
+        <div class="project-cards row center" >
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="project-card">Web Design</div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="project-card">News WebApp</div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="project-card">Food Order WebApp</div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="project-card">Contact Manager App</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section container text-center" id="skills">
+        <h2 class="title skills">skills</h2>
+        <div class="row">
+            <div class="col">
+                <img src="image\html-logo.png" alt="HTML5">
+                <div class="skill-icons-text">HTML5</div>
+            </div>
+            <div class="col">
+                <img src="image\css-logo.png" alt="CSS3">
+                <div class="skill-icons-text">CSS</div>
+            </div>
+            <div class="col">
+                <img src="image\js-logo.png" alt="JavaScript">
+                <div class="skill-icons-text">Javascript</div>
+            </div>
+            <div class="col">
+                <img src="image\react-logo.png" alt="React">
+                <div class="skill-icons-text">React</div>
+            </div>
+            <div class="col">
+                <img src="image\figma-logo.png" alt="React">
+                <div class="skill-icons-text">Figma</div>
+            </div>
+            <div class="col">
+                <img src="image\github-logo.png" alt="React">
+                <div class="skill-icons-text">Git</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image\bootstrap-logo.png" alt="Bootstrap">
+                <div class="skill-icons-text">Bootstrap</div>
+            </div>
+            <div class="col">
+                <img src="image\mui-logo.png" alt="Node.js">
+                <div class="skill-icons-text">Material UI</div>
+            </div>
+            <div class="col">
+                <img src="image\nodejs-logo.png" alt="C++">
+                <div class="skill-icons-text">Node JS</div>
+            </div>
+            <div class="col">
+                <img src="image\c++logo.png" alt="Arduino">
+                <div class="skill-icons-text">C++</div>
+            </div>
+            <div class="col">
+                <img src="image\gcode-logo.png" alt="C++">
+                <div class="skill-icons-text">G-Code</div>
+            </div>
+            <div class="col">
+                <img src="image\arduino-logo.png" alt="C++">
+                <div class="skill-icons-text">Arduino</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="background-section container text-center">
+        <h2 class="title background">background</h2>
+    </section>
+
+    <section class="contact-section container text-center" id="contact">
+        <h3 class="contact">Contact me!</h3>
+        <form class="contact-form" action="https://formspree.io/f/xjkbnrrq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <!-- <input type="text" name="job_title" placeholder="Job Title" required>
+            <input type="text" name="company" placeholder="Company" required> -->
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-danger">SEND MESSAGE</button>
+        </form>
+        <div class="get-in-touch">
+            <img src="get-in-touch.png" alt="Get in Touch">
+        </div>
+    </section>
+
+    <!-- <section class="contact-section container text-center" id="contact">
+        <h3 class="contact">Contact me!</h3>
+        <form class="contact-form">
+            <input type="text" class="form-control mb-3" placeholder="Name">
+            <input type="text" class="form-control mb-3" placeholder="Job Title">
+            <textarea class="form-control mb-3" placeholder="Message"></textarea>
+            <button class="btn btn-danger">Send Message</button>
+        </form>
+        <div class="get-in-touch">
+            <img src="get-in-touch.png" alt="Get in Touch">
+        </div>
+    </section> -->
+
+    <footer class="text-center" id>
+        <ul class="social-links">
+            <li><a href="https://github.com/aneissofea" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:aneissofea@gmail.com">Email</a></li>
+            <li><a href="href="https://discordapp.com/users/907895366131777556" target="_blank">Discord</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
