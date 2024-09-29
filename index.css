@@ -411,6 +411,35 @@ body.light-mode {
     color: #D7D7C0;
 }
 
+.project-card.light-mode {
+    /* background-color: #333; */
+    text-align: center;
+    border-radius: 12px;
+    height: 315px;
+    width: 255px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background images for each project card */
+.col-lg-3:nth-of-type(1) .project-card.light-mode {
+    background-image: url('../image/web-design.png');
+}
+
+.col-lg-3:nth-of-type(2) .project-card.light-mode {
+    background-image: url('../image/food-app.png');
+}
+
+.col-lg-3:nth-of-type(3) .project-card.light-mode {
+    background-image: url('../image/news-app.png');
+}
+
+.col-lg-3:nth-of-type(4) .project-card.light-mode {
+    background-image: url('../image/contact-app.png');
+}
 .project-card.light-mode .intro {
     color: #D7D7C0;
     background-color: rgba(215, 215, 192, 0.95); /* Light mode transparency */
