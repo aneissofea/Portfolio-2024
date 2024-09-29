@@ -56,6 +56,57 @@ body {
     color: #CE383C;
 }
 
+/*-------------toggle switch------------*/
+.toggle-container {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Hide the default checkbox */
+.toggle-checkbox {
+    display: none;
+}
+
+/* Styling the label as a switch */
+.toggle-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    width: 60px;
+    height: 34px;
+    background-color: #D7D7C0; /* Light switch background */
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #121212; /* Dark switch background */
+    
+}
+
+.toggle-switch {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-switch {
+    transform: translateX(26px);
+}
+
+.toggle-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
 /*-------------ABOUT------------*/
 .main-section {
     /* padding: 100px 0; */
@@ -308,7 +359,99 @@ footer .social-links a:hover{
     color: #CE383C;
 }
 
-/* Adjusted for tablets */
+/*-------------start of LIGHT MODE------------*/
+/* General Styles for Light Mode */
+body.light-mode {
+    background-color: #D7D7C0;
+    color: #121212;
+}
+
+/* Titles */
+.main-title.light-mode {
+    color: #CE383C; /* Keep the red color */
+}
+.title.light-mode {
+    color: #121212; /* Swapping the title color */
+}
+
+/* Buttons */
+.btn-danger.light-mode {
+    background-color: #CE383C; /* Keep the red color */
+}
+
+/* Navbar */
+.navbar.light-mode {
+    background-color: transparent;
+}
+.nav-link.light-mode {
+    color: #121212;
+}
+.nav-link.light-mode:hover {
+    color: #CE383C;
+}
+
+/* About Section */
+.about.light-mode {
+    color: #121212;
+}
+.sphere-png.light-mode {
+    filter: none; /* Reset any filters */
+}
+.description.light-mode {
+    color: #121212;
+}
+
+/* Project Cards */
+.projects-section.light-mode {
+    background-color: #121212;
+    color: #D7D7C0;
+}
+
+.projects.light-mode {
+    color: #D7D7C0;
+}
+
+.project-card.light-mode .intro {
+    color: #D7D7C0;
+    background-color: rgba(215, 215, 192, 0.95); /* Light mode transparency */
+}
+
+.intro.light-mode h4, .intro.light-mode h5, .intro.light-mode p {
+    color: #121212;
+}
+
+/* Skills Section */
+.skills-section.light-mode {
+    color: #121212;
+}
+
+.col.light-mode img {
+    filter: grayscale(100%);
+}
+
+/* Contact Section */
+.contact.light-mode {
+    color: #121212;
+}
+.contact-form.light-mode input, .contact-form.light-mode textarea {
+    background-color: #D7D7C0;
+    color: #121212;
+}
+
+/* Footer */
+footer.light-mode {
+    background-color: #D7D7C0;
+}
+footer.light-mode a {
+    color: #121212;
+}
+footer.light-mode a:hover {
+    color: #CE383C;
+}
+
+/*-------------end of LIGHT MODE------------*/
+
+/* For tablets */
 @media (max-width: 1024px) {
     .nav-link {
         font-size: 0.9em;
