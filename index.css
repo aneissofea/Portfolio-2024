@@ -2,27 +2,37 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #121212;
-    color: #eee;
+    color: #D7D7C0;
     margin: 0;
     padding: 0;
 }
 
-/*texts*/
+/*-------------titles------------*/
 .main-title{
-    font-size:200px;
+    /* font-size: 4rem; */
+    /* font-size:200px; */
+    font-size: 12.5em;
     font-weight: bold;
     line-height: 100%;
     color: #CE383C;
     text-align: center;
 }
 .title{
-    font-size:150px;
+    /* font-size:150px; */
+    font-size: 9.4em;
     font-weight: bold;
     color: #D7D7C0;
     margin:0;
 }  
-/*buttons*/
 
+/*-------------buttons------------*/
+.btn-danger {
+    background-color: #CE383C; /*#E94545*/
+    border: none;
+    padding: 10px 20px;
+}
+
+/*-------------HEADER------------*/
 .navbar {
     padding: 20px 0;
     margin: 0 auto;
@@ -31,16 +41,22 @@ body {
     /* align-items: center; */
 }
 
+.navbar  ul{
+    display: flex;
+    margin: 0 auto;
+}
 .nav-link {
     color: #D7D7C0;
     margin-right: 20px;
     /* font-size: 1.2rem; */
-    font-size:16px;
+    /* font-size:16px; */
+    font-size: 1.2em;
 }
 .nav-link:hover{
     color: #CE383C;
 }
 
+/*-------------ABOUT------------*/
 .main-section {
     /* padding: 100px 0; */
 }
@@ -51,19 +67,12 @@ body {
     padding: 0 0 0 30px; */
 }
 
-.name {         /*main-title DELETE*/
-    font-size: 4rem;
-    color: #CE383C;
-    font-weight: bold;
-}
 .sphere-png{
-    width: 535px;
+    /* width: 535px; */
+    width: 36%;
     height:auto;
-    /* position:relative;
-    float:left; */
     margin: 3.5% 8% 0;
 }
-
 
 .description-container{
     position:relative;
@@ -74,7 +83,8 @@ body {
 }
 .description {
     /* font-size: 1.5rem; */
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1em;
     margin-bottom: 20px;
 }
 .description-cta{
@@ -83,51 +93,128 @@ body {
     justify-content: center;
     gap: 20px;
 }
-.description-logo{
+/* .description-logo{
     width: 42px;
     height:42px;
     border: 1px solid #D7D7C0;
     border-radius: 50%;
-}
-.btn-danger {
-    background-color: #CE383C; /*#E94545*/
-    border: none;
-    padding: 10px 20px;
+} */
+
+.description-logo-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
 
+.description-logo {
+    display: block;
+    width: 42px; /* Adjust this size as per your need */
+    height: 42px; /* Adjust this size as per your need */
+    filter: grayscale(100%); /* Makes the image grayscale */
+    transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+.description-logo-container:hover .description-logo {
+    filter: grayscale(0%); /* Removes grayscale on hover */
+}
+
+
+/*------------PROJECTS------------*/
 .projects-section {
     padding: 0px 0 0px;
     color: #EDE7D9;
+    background-color: #D7D7C0;
+    border-radius: 30px;
 }
 
 .projects{
     text-align: right;
-    line-height: 20%
+    color:#121212;
+    /* line-height: 20% */
+}
+.col-lg-3, .col-md-6 {
+    flex: 1 1 255px;
+    max-width: 255px;
 }
 
-/* .projects-section h2 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-} */
-
 .project-cards{
-    margin: 15% 0;
+    margin: 10% 0 15%;
     display: flex;
-    justify-content: center;
+    justify-content: center;      /* Centers the cards horizontally */
+    align-items: center;          /* Centers the cards vertically */
+    flex-wrap: wrap;              /* Allows the cards to wrap on smaller screens */
+    gap: 50px;                    
     
 }
 .project-card {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+    /* background-color: #333; */
     text-align: center;
     border-radius: 12px;
-    /* height: 286px;
-    width: 236px; */
     height: 315px;
     width: 255px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Background images for each project card */
+.col-lg-3:nth-of-type(1) .project-card {
+    background-image: url('../image/web-design.png');
+}
+
+.col-lg-3:nth-of-type(2) .project-card {
+    background-image: url('../image/food-app.png');
+}
+
+.col-lg-3:nth-of-type(3) .project-card {
+    background-image: url('../image/news-app.png');
+}
+
+.col-lg-3:nth-of-type(4) .project-card {
+    background-image: url('../image/contact-app.png');
+}
+
+/* Text hidden by default */
+.project-card .intro{
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.project-card .intro a{
+    color: white;
+    font-weight:bold;
+}
+/* On hover, show the text and apply a solid background */
+.project-card:hover .intro {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.95);  /* Solid background, with some transparency */
+    padding: 25px 10px 15px;
+    border-radius: 8px;
+}
+/* .project-card:hover .intro a:hover{
+    color: #CE383C;
+} */
+.intro h4{ 
+    /* font-size: 17px; */
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0 0 15px;
+}
+.intro h5{
+    font-weight: bold;
+}
+.intro h5, ul li, p{
+    /* font-size: 14px; */
+    font-size: 0.85em;
+}
+.intro .note{
+    font-size:12px;
+    font-style: italic;
+}
+
+/*-------------SKILLS------------*/
 .skills-section {
     padding: 0 0 80px;
 }
@@ -164,7 +251,8 @@ body {
 
 .skill-icons-text {
     margin-top: 10px;
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 0.8em;
     transition: transform 0.3s ease; /* Smooth transition for text */
 }
 
@@ -172,8 +260,14 @@ body {
     transform: scale(1.1); /* Slight zoom on text when hovered */
 }
 
+/*-------------CONTACT------------*/
 .contact-section {
-    padding: 50px 0;
+    padding: 0px 0 50px;
+}
+
+.contact{
+    padding: 0 0 70px;
+    text-align: left;
 }
 
 .contact-form input, .contact-form textarea {
@@ -214,12 +308,74 @@ footer .social-links a:hover{
     color: #CE383C;
 }
 
-@media (max-width: 768px) {
-    .name {
-        font-size: 3rem;
+/* Adjusted for tablets */
+@media (max-width: 1024px) {
+    .nav-link {
+        font-size: 0.9em;
+    }    
+    .main-title {
+        font-size: 7.8em;
+        line-height: 125%
     }
+    .title{
+        font-size: 7.5em;
+    } 
+    .description {
+        font-size: 0.68em;
+    }
+    .project-card {
+        margin-bottom: 25px;
+    }
+}
 
-    .lead {
-        font-size: 1.2rem;
+/*For smartphones*/
+@media (max-width: 767px) {
+    .nav-link {
+        font-size: 0.78em;
+    } 
+    .main-title {
+        font-size: 6.5em;
+        line-height: 100%
+    }
+    .title{
+        font-size: 4em;
+    } 
+    .about{
+        padding: 0 0 0 20px; */
+    }
+    .description-container{
+        width: 90%;
+        margin:0 auto;
+        text-align:center;
+    }
+    .description {
+        font-size: 0.68em;
+    }
+    .description-logo{
+        width: 35px;
+        height:35px;
+    }
+    .btn-danger {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .sphere-png{
+        width: 55%;
+        height:auto;
+        display: flex;
+        margin: 0 auto;
+        padding:20px 0 10px;
+    }
+    .project-cards .col {
+        width: 100%; /* Make projects stack vertically */
+    }
+    .skills-section .col img {
+        height: 42.5px;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    
+    .skill-icons-text {
+        font-size: 0.55em;
     }
 }

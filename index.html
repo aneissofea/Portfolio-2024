@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--  ensures the page adjusts to the screen width of the device -->
     <title>Aneis Sofea - Front-End Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -11,9 +11,9 @@
 <body>
 
     <nav class="navbar">
-        <div class="container">
+        <div class="container col-lg-12 col-md-12 col-sm-12">
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <!-- <li class="nav-item"><a href="#" class="nav-link">About</a></li> -->
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
@@ -22,19 +22,27 @@
     </nav>
     
     <section class="main-section ">     <!-- container text-center -->
-        <h2 class="title about">about</h2>
-        <h1 class="main-title">ANEIS SOFEA</h1>
+        <h2 class="title about col-lg-6 col-md-5.5 col-sm-4">about</h2>
+        <h1 class="main-title col-lg-12 col-md-12 col-sm-12">ANEIS SOFEA</h1>
         <div class="description-container">
-            <p class="description">A FRONT-END DEVELOPER WITH A PASSION FOR CODING AND CREATING SEAMLESS USER EXPERIENCE.
+            <p class="description col-lg-12 col-md-12 col-sm-12">A FRONT-END DEVELOPER WITH A PASSION FOR CODING AND CREATING SEAMLESS USER EXPERIENCE.
                 <br/><br/>
                 A LITTLE BACKGROUND ABOUT ME, I GRADUATED WITH MECHANICAL ENGINEERING DEGREE AND I HAD MY FAIR INTEREST IN CYBERSECURITY BEFORE MY DEGREE. ALTHOUGH I PURSUED A DIFFERENT PATH, WORKING IN AUTOMOTIVE AND ART INDUSTRIES, MY PASSION FOR TECH REIGNITED AND IT LED ME TO DIVE INTO FRONT-END PROGRAMMING FIRST.
                 <br/><br/>
                 THIS SITE SERVES AS A CANVAS FOR ME TO EXPERIMENT AND I’M PLANNING TO ADD MORE INTERACTIVE ELEMENTS AS I CONTINUE TO GROW. WITH MY PERSEVERANCE, PROFESSIONALISM, AND EAGERNESS TO LEARN, I AM CONFIDENT I CAN CONTRIBUTE TO MEANINGFUL PROJECTS. LET’S COLLABORATE AND BRING CREATIVE IDEAS TO LIFE!
                 <br/></p>
                 <div class="description-cta">
-                    <a href="#" class="btn btn-danger" target="_blank">Download Resume</a>
-                    <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank"><img class="description-logo" src="image\linkedin-logo.png"/></a>
-                    <a href="https://github.com/aneissofea" target="_blank"><img class="description-logo" src="image\github-logo.png"/></a>
+                    <a href="file/RESUME_ANEISSOFEA.pdf" class="btn btn-danger" download="RESUME_ANEISSOFEA.pdf" target="_blank">Download Resume</a>
+                    <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank">
+                        <div class="description-logo-container">
+                            <img class="description-logo" src="image\linkedin-colored.png"/>
+                        </div>
+                    </a>
+                    <a href="https://github.com/aneissofea" target="_blank">
+                        <div class="description-logo-container">
+                            <img class="description-logo" src="image\github-coloredd.png"/>
+                        </div>
+                    </a>
                 </div>
             </div>
         <img class="sphere-png" src="image/sphere.png"/>
@@ -44,16 +52,62 @@
         <h2 class="title projects">projects</h2>
         <div class="project-cards row center" >
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">Web Design</div>
+                <div class="project-card">
+                    <div class="intro">
+                        <h4>WEB DESIGN</h4>
+                        <h5>A showcase of web design projects and prototypes.</h5>
+                        <ul>
+                            <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
+                            <li>View full project details and interactive elements on Figma.</li>
+                        </ul>
+                        <!-- <p><a href="#" target="_blank">View designs in Figma</a></p> -->
+                        <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-danger" target="_blank">View designs in Figma</a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">News WebApp</div>
+                <div class="project-card">
+                    <div class="intro">
+                        <h4>FOOD ORDER WEBAPP</h4>
+                        <h5>A food ordering web app with two sections: User and Admin.</h5>
+                        <ul>
+                            <li>User: Add items to the cart, adjust quantities, and see updated menu items.</li>
+                            <li>Admin: Add or remove menu items.</li>
+                        </ul>
+                        <!-- <p><a href="#" target="_blank">Demo</a></p> -->
+                        <a href="#" class="btn btn-danger" target="_blank">Demo</a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">Food Order WebApp</div>
+                <div class="project-card">
+                    <div class="intro">
+                        <h4>NEWS WEBAPP</h4>
+                        <h5>A news app where users can search and favorite articles.</h5>
+                        <ul>
+                            <li>Users log in, search for news, and browse articles fetched via an API.</li>
+                            <li>Favorites are saved and displayed in the sidebar.</li>
+                        </ul>
+                        <p class="note">Note: Work in progress.<br/>Demo Username: sofea<br/>Demo Password: chrome123</p>
+                        <!-- <p><a href="#" target="_blank">Demo</a></p> -->
+                        <a href="#" class="btn btn-danger" target="_blank">Demo</a>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">Contact Manager App</div>
+                <div class="project-card">
+                    <div class="intro">
+                        <h4>CONTACT MANAGER APP</h4>
+                        <h5>A contact management app built with API integration.</h5>
+                        <ul>
+                            <li>Involves prototyping, routing, API connections, and feature development.</li>
+                            <li>Includes incremental updates and refactoring.</li>
+                        </ul>
+                        <p class="note">Note: Still in progress.</p>
+                        <!-- <p><a href="#" target="_blank">Demo</a></p> -->
+                        <a href="#" class="btn btn-danger" target="_blank">Demo</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -114,12 +168,13 @@
         </div>
     </section>
 
-    <section class="background-section container text-center">
+    <!-- <section class="background-section container text-center">
         <h2 class="title background">background</h2>
-    </section>
+    </section> -->
 
     <section class="contact-section container text-center" id="contact">
-        <h3 class="contact">Contact me!</h3>
+        <h2 class="title contact">contact</h2>
+        <!-- <h3 class="contact">Contact me!</h3> -->
         <form class="contact-form" action="https://formspree.io/f/xjkbnrrq" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -128,9 +183,9 @@
             <textarea name="message" placeholder="Message" rows="4" required></textarea>
             <button type="submit" class="btn btn-danger">SEND MESSAGE</button>
         </form>
-        <div class="get-in-touch">
+        <!-- <div class="get-in-touch">
             <img src="get-in-touch.png" alt="Get in Touch">
-        </div>
+        </div> -->
     </section>
 
     <!-- <section class="contact-section container text-center" id="contact">
@@ -150,8 +205,8 @@
         <ul class="social-links">
             <li><a href="https://github.com/aneissofea" target="_blank">GitHub</a></li>
             <li><a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:aneissofea@gmail.com">Email</a></li>
-            <li><a href="href="https://discordapp.com/users/907895366131777556" target="_blank">Discord</a></li>
+            <li><a href="mailto:aneissofea@gmail.com?subject=Hi%20Sofea!&body=Please%20work%20for%20me.">Email</a></li>
+            <li><a href="https://discordapp.com/users/907895366131777556" target="_blank">Discord</a></li>
         </ul>
     </footer>
 
