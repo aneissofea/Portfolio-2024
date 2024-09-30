@@ -436,7 +436,7 @@ body.light-mode {
     background-color: rgba(215, 215, 192, 0.95); /* Light mode transparency */
 }
 
-.intro.light-mode h4, .intro.light-mode h5, .intro.light-mode p {
+.intro.light-mode h4, .intro.light-mode h5, .intro.light-mode ul li, .intro.light-mode p {
     color: #121212;
 }
 
