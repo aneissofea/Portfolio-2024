@@ -321,8 +321,8 @@ body {
 }
 
 footer {
-    background-color: #222;
-    padding: 20px;
+    background-color: transparent;
+    padding: 10px 0 55px;
 }
 
 footer .social-links {
