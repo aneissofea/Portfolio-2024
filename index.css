@@ -110,18 +110,13 @@ body {
 
 
 /*-------------ABOUT------------*/
-.main-section {
-    /* padding: 100px 0; */
-}
+
 .about{
-    /* line-height: 10%; */
-    /* padding: 25px 0 0 30px; */
     line-height: 35%;
-    padding: 0 0 0 30px; */
+    padding: 0 0 0 30px;
 }
 
 .sphere-png{
-    /* width: 535px; */
     width: 36%;
     height:auto;
     margin: 3.5% 8% 0;
@@ -135,8 +130,6 @@ body {
     text-align:center;
 }
 .description {
-    /* font-size: 1.5rem; */
-    /* font-size: 16px; */
     font-size: 1em;
     margin-bottom: 20px;
 }
@@ -146,12 +139,6 @@ body {
     justify-content: center;
     gap: 20px;
 }
-/* .description-logo{
-    width: 42px;
-    height:42px;
-    border: 1px solid #D7D7C0;
-    border-radius: 50%;
-} */
 
 .description-logo-container {
     position: relative;
@@ -183,7 +170,6 @@ body {
 .projects{
     text-align: right;
     color:#121212;
-    /* line-height: 20% */
 }
 .col-lg-3, .col-md-6 {
     flex: 1 1 255px;
@@ -200,7 +186,6 @@ body {
     
 }
 .project-card {
-    /* background-color: #333; */
     text-align: center;
     border-radius: 12px;
     height: 315px;
@@ -239,6 +224,7 @@ body {
     color: white;
     font-weight:bold;
 }
+
 /* On hover, show the text and apply a solid background */
 .project-card:hover .intro {
     opacity: 1;
@@ -246,11 +232,8 @@ body {
     padding: 25px 10px 15px;
     border-radius: 8px;
 }
-/* .project-card:hover .intro a:hover{
-    color: #CE383C;
-} */
+
 .intro h4{ 
-    /* font-size: 17px; */
     font-size: 1.1em;
     font-weight: bold;
     padding: 0 0 15px;
@@ -259,7 +242,6 @@ body {
     font-weight: bold;
 }
 .intro h5, ul li, p{
-    /* font-size: 14px; */
     font-size: 0.85em;
 }
 .intro .note{
@@ -275,10 +257,6 @@ body {
 .skills{
     margin: 0 0 9.5%;
 }
-/* .skills-section h2 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-} */
 
 .skills-section .col img {
     width: 75px;
@@ -304,7 +282,6 @@ body {
 
 .skill-icons-text {
     margin-top: 10px;
-    /* font-size: 14px; */
     font-size: 0.8em;
     transition: transform 0.3s ease; /* Smooth transition for text */
 }
@@ -362,7 +339,6 @@ footer .social-links a:hover{
 }
 
 /*-------------start of LIGHT MODE------------*/
-/* General Styles for Light Mode */
 body.light-mode {
     background-color: #D7D7C0;
     color: #121212;
@@ -506,7 +482,7 @@ footer.light-mode a:hover {
         font-size: 4em;
     } 
     .about{
-        padding: 0 0 0 20px; */
+        padding: 0 0 0 20px;
     }
     .description-container{
         width: 90%;
