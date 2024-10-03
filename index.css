@@ -9,8 +9,6 @@ body {
 
 /*-------------titles------------*/
 .main-title{
-    /* font-size: 4rem; */
-    /* font-size:200px; */
     font-size: 12.5em;
     font-weight: bold;
     line-height: 100%;
@@ -18,7 +16,6 @@ body {
     text-align: center;
 }
 .title{
-    /* font-size:150px; */
     font-size: 9.4em;
     font-weight: bold;
     color: #D7D7C0;
@@ -37,21 +34,20 @@ body {
     padding: 20px 0;
     margin: 0 auto;
     display:flex;
-    justify-content: center; /*not working*/
-    /* align-items: center; */
+    justify-content: center;
 }
 
 .navbar  ul{
     display: flex;
     margin: 0 auto;
 }
+
 .nav-link {
     color: #D7D7C0;
     margin-right: 20px;
-    /* font-size: 1.2rem; */
-    /* font-size:16px; */
     font-size: 1.2em;
 }
+
 .nav-link:hover{
     color: #CE383C;
 }
@@ -108,9 +104,7 @@ body {
 }
 
 
-
 /*-------------ABOUT------------*/
-
 .about{
     line-height: 35%;
     padding: 0 0 0 30px;
@@ -129,10 +123,12 @@ body {
     width: 40%;
     text-align:center;
 }
+
 .description {
     font-size: 1em;
     margin-bottom: 20px;
 }
+
 .description-cta{
     text-align: center;
     display:flex;
@@ -171,6 +167,7 @@ body {
     text-align: right;
     color:#121212;
 }
+
 .col-lg-3, .col-md-6 {
     flex: 1 1 255px;
     max-width: 255px;
@@ -185,6 +182,7 @@ body {
     gap: 50px;                    
     
 }
+
 .project-card {
     text-align: center;
     border-radius: 12px;
@@ -220,6 +218,7 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
+
 .project-card .intro a{
     color: white;
     font-weight:bold;
@@ -238,16 +237,20 @@ body {
     font-weight: bold;
     padding: 0 0 15px;
 }
+
 .intro h5{
     font-weight: bold;
 }
+
 .intro h5, ul li, p{
     font-size: 0.85em;
 }
+
 .intro .note{
     font-size:12px;
     font-style: italic;
 }
+
 
 /*-------------SKILLS------------*/
 .skills-section {
@@ -289,6 +292,7 @@ body {
 .col:hover .skill-icons-text {
     transform: scale(1.1); /* Slight zoom on text when hovered */
 }
+
 
 /*-------------CONTACT------------*/
 .contact-section {
@@ -388,26 +392,6 @@ body.light-mode {
 .projects.light-mode {
     color: #D7D7C0;
 }
-
-/* .col-lg-3:nth-of-type(1) .project-card.light-mode {
-    background-image: url('../image/web-design.png');
-    background-color: #e6dc91; 
-}
-
-.col-lg-3:nth-of-type(2) .project-card.light-mode {
-    background-image: url('../image/food-app.png');
-    background-color: #e6dc91;
-}
-
-.col-lg-3:nth-of-type(3) .project-card.light-mode {
-    background-image: url('../image/news-app.png');
-    background-color: #e6dc91;
-}
-
-.col-lg-3:nth-of-type(4) .project-card.light-mode {
-    background-image: url('../image/contact-app.png');
-    background-color: #e6dc91;
-} */
 
 .project-card.light-mode .intro {
     color: #D7D7C0;
