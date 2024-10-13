@@ -9,12 +9,25 @@ body {
 
 /*-------------titles------------*/
 .main-title{
-    font-size: 12.5em;
+    font-size: 96px;
+    /* font-size: 12.5em; */
     font-weight: bold;
     line-height: 100%;
     color: #CE383C;
-    text-align: center;
+    text-align: left;
 }
+
+.sub-main-title{
+    font-size: 86px;
+    /* font-size: 12.5em; */
+    font-weight: 400;
+    font-style: italic;
+    line-height: 100%;
+    color: #fff;
+    text-align: left;
+    width: 60%;
+}
+
 .title{
     font-size: 9.4em;
     font-weight: bold;
@@ -30,6 +43,12 @@ body {
 }
 
 /*-------------HEADER------------*/
+.time{
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 12%;
+}
 .navbar {
     padding: 20px 0;
     margin: 0 auto;
@@ -103,10 +122,28 @@ body {
     font-size: 16px;
 }
 
+/*-------------HOME------------*/
+.home-section{
+    height: 100vh;
+    /* vertical-align: top|middle|bottom; */
+    /* line-height: 100vh; */
+    /* vertical-align: middle; */
+    margin: auto;
+    padding: 40px 0;
+}
+
+.home-text{
+    width: 47%;
+    padding: 15px 0 0;
+}
 
 /*-------------ABOUT------------*/
+.about-section{
+    height: 100vh;
+}
+
 .about{
-    line-height: 35%;
+    /* line-height: 35%; */
     padding: 0 0 0 30px;
 }
 
@@ -352,6 +389,11 @@ body.light-mode {
 .main-title.light-mode {
     color: #CE383C; /* Keep the red color */
 }
+
+.sub-main-title.light-mode {
+    color: #121212;
+}
+
 .title.light-mode {
     color: #121212; /* Swapping the title color */
 }
@@ -371,6 +413,9 @@ body.light-mode {
 .nav-link.light-mode:hover {
     color: #CE383C;
 }
+/* Home Section*/
+
+
 
 /* About Section */
 .about.light-mode {
@@ -435,12 +480,23 @@ footer.light-mode a:hover {
 
 /* For tablets */
 @media (max-width: 1024px) {
-    .nav-link {
+    .nav-link{
         font-size: 0.9em;
     }    
+    .time{
+        font-size: 0.9rem;
+        width: 20%;
+    }
     .main-title {
-        font-size: 7.8em;
+        font-size: 7rem;
         line-height: 125%
+    }
+    .sub-main-title{
+        font-size: 4rem;
+        width: 90%;
+    }
+    .home-text{
+        width: 59%;
     }
     .title{
         font-size: 7.5em;
@@ -455,18 +511,35 @@ footer.light-mode a:hover {
 
 /*For smartphones*/
 @media (max-width: 767px) {
+    .nav{
+        display:flex;
+        gap: 5px;
+    }
     .nav-link {
         font-size: 0.78em;
     } 
+    .time{
+        display:none;
+    }
     .main-title {
-        font-size: 6.5em;
+        font-size: 4rem;
         line-height: 100%
     }
+    .sub-main-title{
+        font-size: 2.8rem;
+        width: 90%;
+    }    
     .title{
         font-size: 4em;
     } 
+    .home-text{
+        width: 75%;
+    }
+    .home-section{
+        height: 450px;
+    }
     .about{
-        padding: 0 0 0 20px;
+        padding: 0 0 20px 20px;
     }
     .description-container{
         width: 90%;
@@ -502,5 +575,9 @@ footer.light-mode a:hover {
     
     .skill-icons-text {
         font-size: 0.55em;
+    }
+
+    .home-section, .about-section, .projects-section, .skills-section, .contact-section{
+        padding: 0 10px;
     }
 }
