@@ -43,3 +43,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Set the time
     updateTime('Asia/Kuala_Lumpur');  // Malaysia time zone
+
+
+    $('.owl-3-slider').owlCarousel({
+        loop: true,     //for the items/cards to go in a loop
+        margin: 10,     //gap between the items/cards
+        nav: true,      //nav buttons to be displayed
+        navText: ["←", "→"],
+        dots: false,    //the pagination at the bottom
+        center: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            800: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });

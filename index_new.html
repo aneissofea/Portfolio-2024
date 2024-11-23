@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--  ensures the page adjusts to the screen width of the device -->
+    <title>Aneis Sofea | Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="style_new.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
+    <!-- JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <nav class="navbar">
+        <div class="container col-lg-12 col-md-12 col-sm-12">
+            <div class="time" id="time"></div>
+            <ul class="nav mt-2">
+                <li><a href="#about" class="display-10">About</a></li>
+                <li><a href="#projects" class="display-10">Projects</a></li>
+                <li><a href="#skills" class="display-10">Stacks</a></li>
+                <li><a href="#contact" class="display-10">Contact</a></li>
+            </ul>
+            <!-- toggle switch -->
+            <div class="toggle-container">
+                <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+                <label for="theme-toggle" class="toggle-label">
+                    <span class="toggle-icon moon">🌙</span>
+                    <span class="toggle-icon sun">☀️</span>
+                    <span class="toggle-switch"></span>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section class="home-section container">
+        <p class="description">Hi there, I'm Sofea 👋</p>
+        <h1 class="main-title col-lg-12 col-md-12 col-sm-12">A creative developer</h1>
+        <h1 class="sub-main-title">available to work globally</h1>
+        <p class="description home-text">With a focus on modern web technologies and pixel-perfect implementation, I am committed to creating intuitive and high quality websites that drive conversions.</p>
+    </section> -->
+
+    <!-- About Section -->
+    <section class="about-section container pb-5" id="about">
+        <h2 class="display-2 mb-4">about</h2>
+        <div class="row">
+            <div class="col-lg-5 col-12 text-center sphere-img">
+                <img class="sphere-jpg" src="image/sphere.png"/>
+            </div>
+            <div class="col-lg-7 col-12 text-center">
+                <p class="display-10">A front-end developer with a passion for creating and coding.</p>     
+                <p class="display-10 mb-2">Mini background about me, I graduated with a Bachelor's Degree in Mechanical Engineering and had my fair interest in programming before my bachelor study. Although I pursued a different path, working in automotive and art industries, my passion for tech reignited and it led to dive into front-end development.</p>
+                <p class="display-10 mb-2">This site serves as a platform for me to gather my work as a front-end developer and to showcase my previous work as a creative "bricks" designer. I have an eye for details and keeping things understandable by other colleagues/developers. I do struggle with asking for help at times, but i'm working on it. With my perseverance, professionalism, and eagerness to learn, I am confident I can contribute to meaningful projects.</p>   
+                <p class="display-10 mb-2">Let's collaborate and bring creative ideas to life!</p>    
+                <div class="row justify-content-center mt-5">
+                    <div class="col-4">
+                        <a href="file/RESUME_ANEISSOFEA.pdf" class="btn btn-primary" download="RESUME_ANEISSOFEA.pdf" target="_blank">Download Resume</a>
+                    </div>
+                    <div class="col-1">
+                        <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank" class="description-logo-container">
+                            <img class="description-logo" src="image\linkedin-colored.png"/>
+                        </a>
+                    </div>
+                    <div class="col-1">
+                        <a href="https://github.com/aneissofea" target="_blank" class="description-logo-container">
+                            <img class="description-logo" src="image\github-coloredd.png"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section container mt-5 pb-5" id="projects">
+        <div class="bg-light rounded-30 py-5">
+            <h2 class="display-2 pb-5 pe-4 text-end">projects</h2>
+            <div class="project-cards center">
+        
+                <!-- Owl Carousel -->
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-10 mt-3">
+                        <div class="owl-3-slider owl-carousel owl-theme">      
+                                
+                            <div class="item mb-4">
+                                <div class="project-card">
+                                    <img src="image/web-design.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-0 py-4">
+                                        <h4>WEB DESIGN</h4>
+                                        <h5>A showcase of web design projects and prototypes.</h5>
+                                        <ul class="text-start">
+                                            <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
+                                            <li>View full project details and interactive elements on Figma.</li>
+                                        </ul>
+                                        <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-primary" target="_blank">View designs in Figma</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4">
+                                <div class="project-card">
+                                    <img src="image/food-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-0 py-4">
+                                        <h4>FOOD ORDER WEBAPP</h4>
+                                        <h5>A food ordering web app for User and Admin.</h5>
+                                        <ul class="text-start">
+                                            <li><b>User:</b> Add items to the cart, adjust quantities, and see updated menu items. <b>Admin:</b> Add or remove menu items.</li>
+                                        </ul>
+                                        <a href="https://food-order-webapp.vercel.app/" class="btn btn-primary" target="_blank">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4">
+                                <div class="project-card">
+                                    <img src="image/web-design.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-0 py-4">
+                                        <h4>CREATIVE DESIGN</h4>
+                                        <h5>Past creative projects that I did.</h5>
+                                        <ul class="text-start">
+                                            <li>Explore my brick designs if you're into lego.</li>
+                                            <li>It's only shown here in this page.</li>
+                                        </ul>
+                                        <button type="button" class="btn btn-secondary" data-modal-id="modal2" id="openModalButton2">
+                                            Open Modal 2
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4">
+                                <div class="project-card">
+                                    <img src="image/food-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-0 py-4">
+                                        <h4>PORTFOLIO SITE</h4>
+                                        <h5>Fully developed by yours truly.</h5>
+                                        <ul class="text-start">
+                                            <li>Lorem ipsum</li>
+                                            <li>Lorem ipsum</li>
+                                        </ul>
+                                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalportfolio">
+                                            Lorem ipsum
+                                        </button> -->
+                                        <button type="button" class="btn btn-primary" data-modal-id="modalportfolio" id="openModalButton1">
+                                            Lorem ipsum
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4">
+                                <div class="project-card">
+                                    <img src="image/news-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-0 py-4">
+                                        <h4>NEWS WEBAPP</h4>
+                                        <h5>A news app where users can search and favorite articles.</h5>
+                                        <ul class="text-start">
+                                            <li>Users log in, search for news, and browse articles fetched via an API.</li>
+                                            <li>Favorites are saved and displayed in the sidebar.</li>
+                                        </ul>
+                                        <a href="https://news-webapp-snowy.vercel.app/" class="btn btn-primary" target="_blank">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4">
+                                <div class="project-card">
+                                    <img src="image/contact-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-0 py-4">
+                                        <h4>CONTACT MANAGER APP</h4>
+                                        <h5>A contact management app built with API integration.</h5>
+                                        <ul class="text-start">
+                                            <li>Involves prototyping, routing, API connections, and feature development.</li>
+                                            <li>Includes incremental updates and refactoring.</li>
+                                        </ul>
+                                        <a href="https://contact-manager-webapp.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal Header with Close Button -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="myModalLabel">Scrollable Modal</h5>
+                </div>
+                <!-- Modal Body with scrollable content -->
+                <div class="modal-body">
+                    <p>This is a scrollable modal. Add a lot of content here to see the scroll effect.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi vel consectetur interdum, nisl purus cursus orci, sit amet vehicula metus eros at risus. Integer id bibendum mi. Aliquam erat volutpat. Vestibulum in tristique lectus. Suspendisse potenti. Nullam vulputate convallis nisi, sit amet consequat turpis vestibulum at. Vivamus eu risus neque. Ut id tempor magna. Curabitur aliquam orci sit amet orci pharetra, ac egestas odio rhoncus.</p>
+                    <p>Donec euismod, nisi vel consectetur interdum, nisl purus cursus orci, sit amet vehicula metus eros at risus. Integer id bibendum mi. Aliquam erat volutpat. Vestibulum in tristique lectus. Suspendisse potenti. Nullam vulputate convallis nisi, sit amet consequat turpis vestibulum at. Vivamus eu risus neque. Ut id tempor magna. Curabitur aliquam orci sit amet orci pharetra, ac egestas odio rhoncus.</p>
+                    <p>... (more content to make it scrollable) ...</p>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skills Section -->
+    <section class="skills-section container text-center py-5" id="skills">
+        <h2 class="display-2 pb-5 mb-3">stacks</h2>
+        <div class="row pt-5">
+            <div class="col col-2">
+                <img src="image\html-logo.png" alt="HTML5">
+                <p class="skill-icons-text display-8">HTML5</p>
+            </div>
+            <div class="col col-2">
+                <img src="image\css-logo.png" alt="CSS3">
+                <p class="skill-icons-text display-8">CSS</p>
+            </div>
+            <div class="col col-2">
+                <img src="image\js-logo.png" alt="JavaScript">
+                <p class="skill-icons-text display-8">Javascript</p>
+            </div>
+            <div class="col col-2">
+                <img src="image\react-logo.png" alt="React">
+                <p class="skill-icons-text display-8">React</p>
+            </div>
+            <div class="col col-2">
+                <img src="image\figma-logo.png" alt="React">
+                <p class="skill-icons-text display-8">Figma</p>
+            </div>
+            <div class="col col-2">
+                <img src="image\github-logo.png" alt="React">
+                <p class="skill-icons-text display-8">Git</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="image\bootstrap-logo.png" alt="Bootstrap">
+                <div class="skill-icons-text display-8">Bootstrap</div>
+            </div>
+            <div class="col">
+                <img src="image\mui-logo.png" alt="Node.js">
+                <div class="skill-icons-text display-8">Material UI</div>
+            </div>
+            <div class="col">
+                <img src="image\nodejs-logo.png" alt="C++">
+                <div class="skill-icons-text display-8">Node JS</div>
+            </div>
+            <div class="col">
+                <img src="image\c++logo.png" alt="Arduino">
+                <div class="skill-icons-text display-8">C++</div>
+            </div>
+            <div class="col">
+                <img src="image\gcode-logo.png" alt="C++">
+                <div class="skill-icons-text display-8">G-Code</div>
+            </div>
+            <div class="col">
+                <img src="image\arduino-logo.png" alt="C++">
+                <div class="skill-icons-text display-8">Arduino</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section container text-center" id="contact">
+        <h2 class="title contact">contact</h2>
+        <form class="contact-form" action="https://formspree.io/f/xjkbnrrq" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-danger">SEND MESSAGE</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center" id="">
+        <ul class="social-links d-flex justify-content-center">
+            <li>
+                <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank" class="description-logo-container">
+                    <img class="description-logo" src="image\linkedin-colored.png"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/aneissofea" target="_blank" description-logo-container>
+                    <img class="description-logo" src="image\github-coloredd.png"/>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:aneissofea@gmail.com?subject=Hi%20Sofea%20please%20work%20for%20me" class="description-logo-container">
+                    <img class="description-logo" src="image\gmail-logo.png"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://discordapp.com/users/907895366131777556" target="_blank" class="description-logo-container">
+                    <img class="description-logo" src="image\discord-logo.png"/>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap 5 JS, Popper.js, and Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <script src="script_new.js"></script>
+
+
+</body>
+</html>
