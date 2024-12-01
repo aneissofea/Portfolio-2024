@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true,     //for the items/cards to go in a loop
         margin: 2,     //gap between the items/cards
         nav: true,      //nav buttons to be displayed
-        navText: ["←", "→"],
+        // navText: ["←", "→"],
         dots: false,    //the pagination at the bottom
         center: false,   // causes carousel to center the first item
         responsive: {
@@ -57,12 +57,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 items: 1
             },
             600: {
-                items: 2
+                items: 1
             },
             800: {
-                items: 3
+                items: 2
             },
-            1000: {
+            1200: {
                 items: 3
             }
         }
@@ -118,3 +118,24 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
     
+
+// JavaScript for scroll to top button functionality
+
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block"; // Show the button
+    } else {
+        mybutton.style.display = "none"; // Hide the button
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+mybutton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling
+    });
+};
