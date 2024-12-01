@@ -1,23 +1,17 @@
 /*         INDEX                 */
 /*================================
- *     01.  Variables            *
- *     02.  Bootstrap Custom     *
- *     03.  Components           *
- *     04.  General              *
- *     05.  Helper               *
- *     06.  Menu                 *
- *     07.  Home / Landing       *
- *     08.  Features / Services  *
- *     09.  Testimonial          *
- *     10.  Price                *
- *     11.  C.T.A                *
- *     12.  Blog / Careers / Job *
- *     13.  Work / Projects      *
- *     14.  Team                 *
- *     15.  User Pages           *
- *     16.  Countdown            *
- *     17.  Contact              *
- *     18.  Footer               *
+ *     01.  Buttons              *
+ *     02.  Elements             *
+ *     03.  Fonts                *
+ *     04.  Header               *
+ *     05.  Home / Landing       *
+ *     06.  About                *
+ *     07.  Work / Projects      *
+ *     08.  Stacks               *
+ *     09.  Contacts             *
+ *     10.  Footer               *
+ *     11.  Light mode set       *
+ *     12.  Responsiveness       *
  ================================*/
 
 
@@ -84,11 +78,11 @@ body {
     background-color: #D7D7C0 !important;
 }
 
-/* Basic CSS for the "Scroll to Top" button */
+/* "Scroll to Top" button */
 .scroll-to-top-btn {
     position: fixed;
-    bottom: 45px;    /* Distance from the bottom */
-    right: 50px;     /* Distance from the right */
+    bottom: 45px;   
+    right: 50px; 
     padding: 6px 17px;
     background-color: #a9a9a9;
     color: white;
@@ -234,9 +228,6 @@ body {
 /*-------------HOME------------*/
 .home-section{
     height: 100vh;
-    /* vertical-align: top|middle|bottom; */
-    /* line-height: 100vh; */
-    /* vertical-align: middle; */
     margin: auto;
     padding: 40px 0;
 }
@@ -259,8 +250,8 @@ body {
 }
 .description-logo {
     display: block;
-    width: 42px; /* Adjust this size as per your need */
-    height: 42px; /* Adjust this size as per your need */
+    width: 42px; 
+    height: 42px;
     filter: grayscale(100%); /* Makes the image grayscale */
     transition: filter 0.3s ease-in-out; /* Smooth transition */
 }
@@ -272,7 +263,7 @@ body {
 
 /*------------PROJECTS------------*/
 .owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next {
-    color: #fff !important; /* Change icon color */
+    color: #fff !important;
     border-radius: 50% !important;
     font-size: 30px !important;
     border: none !important;
@@ -333,10 +324,10 @@ body {
 }
 .overlay-text {
     position: absolute;
-    top: 57.8%; /* Center the text vertically */
-    left: 50%; /* Center the text horizontally */
+    top: 57.8%;
+    left: 50%; 
     transform: translate(-50%, -50%); /* Adjust to perfect center */
-    color: #D7D7C0; /* Text color */
+    color: #D7D7C0;
     font-size: 20px;
     width: 100%;
     height: 365px;
@@ -386,7 +377,7 @@ body {
     border: none;
 }
 .modal-dialog {
-    max-height: 800px; /*Set a max height for the modal body */
+    max-height: 800px;
     max-width: 1300px;
     height: 90%;
     width:80%;
@@ -396,7 +387,7 @@ body {
 
 .modal-content {
     padding: 0 25px;
-    overflow-y: auto;  /* Enable vertical scrolling if content overflows */
+    overflow-y: auto; 
     overflow-x: hidden;
 }
 
@@ -456,15 +447,6 @@ body {
 
 
 /*-------------CONTACT------------*/
-.contact-section {
-    padding: 0px 0 50px;
-}
-
-.contact{
-    padding: 0 0 70px;
-    text-align: left;
-}
-
 .contact-form input, .contact-form textarea {
     width:100%;
     padding: 10px;
@@ -475,32 +457,10 @@ body {
     border: none;
 }
 
-.get-in-touch img {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 30px;
-}
-
-footer {
-    padding: 10px 0 55px;
-}
-
-/* footer .social-links {
-    list-style-type: none;
-    padding: 0;
-}*/
 footer .social-links li {
     display: inline;
     margin-right: 20px;
 }
-/*
-footer .social-links a {
-    color: #eee;
-    text-decoration: none;
-}
-footer .social-links a:hover{
-    color: #CE383C;
-} */
 
 /*-------------LIGHT MODE------------*/
 body.light-mode {
