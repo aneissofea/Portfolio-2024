@@ -8,5 +8,6 @@
 public/images/*.jpg
 public/images/*.png
 
-image
-file
+# Ignore the 'image' and 'file' directories at the root level
+/image
+/file
