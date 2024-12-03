@@ -47,23 +47,69 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $('.owl-3-slider').owlCarousel({
         loop: true,     //for the items/cards to go in a loop
-        margin: 10,     //gap between the items/cards
+        margin: 2,     //gap between the items/cards
         nav: true,      //nav buttons to be displayed
-        navText: ["←", "→"],
+        // navText: ["←", "→"],
         dots: false,    //the pagination at the bottom
-        center: true,
+        center: false,   // causes carousel to center the first item
         responsive: {
             0: {
                 items: 1
             },
             600: {
-                items: 2
+                items: 1
             },
             800: {
-                items: 3
+                items: 2
             },
-            1000: {
+            1200: {
                 items: 3
             }
         }
     });
+
+    // JavaScript to load and display the correct modal
+    document.querySelectorAll('[id^="openModalButton"]').forEach(button => {
+        button.addEventListener("click", function() {
+            // Get the modal id from the button's data attribute
+            var modalId = this.getAttribute("data-modal-id");
+
+            // Fetch the modal HTML content
+            fetch('modal.html')
+                .then(response => response.text())
+                .then(data => {
+                    // Insert the fetched modal content into the body
+                    document.body.insertAdjacentHTML('beforeend', data);
+
+                    // Get the specific modal to be shown
+                    var modalToShow = new bootstrap.Modal(document.getElementById(modalId));
+
+                    // Show the modal
+                    modalToShow.show();
+                })
+                .catch(error => {
+                    console.error('Error loading modal:', error);
+                });
+        });
+    });
+    
+
+// JavaScript for scroll to top button functionality
+let mybutton = document.getElementById("scrollToTopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block"; // Show the button
+    } else {
+        mybutton.style.display = "none"; // Hide the button
+    }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+mybutton.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scrolling
+    });
+};

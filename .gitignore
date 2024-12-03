@@ -1,0 +1,12 @@
+# Ignore image files in the entire repository
+*.jpg
+*.jpeg
+*.png
+*.pdf
+
+# Optionally ignore images in specific folders
+public/images/*.jpg
+public/images/*.png
+
+image
+file

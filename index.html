@@ -9,24 +9,35 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Css -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_new.css">
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
     <!-- JQuery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- Include Prism.js -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script> -->
+
 </head>
 <body>
     <!-- Header Section -->
     <nav class="navbar">
         <div class="container col-lg-12 col-md-12 col-sm-12">
             <div class="time" id="time"></div>
-            <ul class="nav">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <ul class="nav mt-2">
+                <li><a href="#about" class="display-10 nav-link">About</a></li>
+                <li><a href="#projects" class="display-10 nav-link">Projects</a></li>
+                <li><a href="#skills" class="display-10 nav-link">Stacks</a></li>
+                <li><a href="#contact" class="display-10 nav-link">Contact</a></li>
             </ul>
+            <!-- <div class="row d-flex flex-column flex-wrap nav mt-2">
+                <div class=""><a href="#about" class="display-10 nav-link">About</a></div>
+                <div class=""><a href="#projects" class="display-10 nav-link">Projects</a></div>
+                <div class=""><a href="#skills" class="display-10 nav-link">Stacks</a></div>
+                <div class=""><a href="#contact" class="display-10 nav-link">Contact</a></div>
+            </div> -->
             <!-- toggle switch -->
             <div class="toggle-container">
                 <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
@@ -41,386 +52,268 @@
 
     <!-- Hero Section -->
     <section class="home-section container">
-        <p class="description">Hi there, I'm Sofea 👋</p>
-        <h1 class="main-title col-lg-12 col-md-12 col-sm-12">A creative developer</h1>
-        <h1 class="sub-main-title">available to work globally</h1>
-        <p class="description home-text">With a focus on modern web technologies and pixel-perfect implementation, I am committed to creating intuitive and high quality websites that drive conversions.</p>
+        <p class="display-8">Hi there, I'm Sofea 👋</p>
+        <h1 class="main-title col-lg-12 col-md-12 col-sm-12">Front-End Developer & Problem Solver</h1>
+        <h2 class="display-6 mt-4 mb-0">Building clean, user-focused websites</h1>
+        <p class="description home-text display-10">With a passion for design and technology, I create responsive and visually appealing websites that balance aesthetics with functionality.</p>
+        <a href="#projects" class="btn btn-primary mt-3">See My Work</a>
     </section>
 
-    <!-- About Section uncomment when youre done (OKAY)-->
-    <!-- <section class="about-section container" id="about">
-        <h2 class="title about col-lg-6 col-md-5.5 col-sm-4">about</h2>
-        <div class="description-container">
-            <p class="description col-lg-12 col-md-12 col-sm-12">A front-end developer with a passion for coding and creating seamless user experience.
-                <br/><br/>
-                Mini background about me, I graduated with a Bachelor's Degree in Mechanical Engineering and had my fair interest in programming before my bachelor study. Although I pursued a different path, working in automotive and art industries, my passion for tech reignited and it led to dive into front-end development.
-                <br/><br/>
-                This site serves as a platform for me to gather my work as a front-end developer and to showcase my previous work as a creative "bricks" designer. I have an eye for details and keeping things understandable by other colleagues/developers. I do struggle with asking for help at times, but i'm working on it. With my perseverance, professionalism, and eagerness to learn, I am confident I can contribute to meaningful projects.<br/><br/> Let's collaborate and bring creative ideas to life!
-                <br/></p>
-                <div class="description-cta">
-                    <a href="file/RESUME_ANEISSOFEA.pdf" class="btn btn-danger" download="RESUME_ANEISSOFEA.pdf" target="_blank">Download Resume</a>
-                    <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank">
-                        <div class="description-logo-container">
-                            <img class="description-logo" src="image\linkedin-colored.png"/>
-                        </div>
-                    </a>
-                    <a href="https://github.com/aneissofea" target="_blank">
-                        <div class="description-logo-container">
-                            <img class="description-logo" src="image\github-coloredd.png"/>
-                        </div>
-                    </a>
-                </div>
+    <!-- About Section -->
+    <section class="about-section container pb-5" id="about">
+        <h2 class="display-2 mb-4">about</h2>
+        <div class="row">
+            <div class="col-lg-5 col-12 text-center sphere-img">
+                <img class="sphere-jpg" src="image/sphere.png"/>
             </div>
-        <img class="sphere-png" src="image/sphere.png"/>
-    </section> -->
-
-    <!-- Projects Carousel Section -->
-    <!-- <section class="projects-section container" id="projects">
-        <h2 class="title projects">projects</h2>
-        <div class="project-cards row center" >
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">
-                    <div class="intro">
-                        <h4>WEB DESIGN</h4>
-                        <h5>A showcase of web design projects and prototypes.</h5>
-                        <ul>
-                            <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
-                            <li>View full project details and interactive elements on Figma.</li>
-                        </ul>
-                        <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-danger" target="_blank">View designs in Figma</a>
+            <div class="col-lg-7 col-12 text-center">
+                <p class="display-10">I’m a front-end developer with a unique background in mechanical engineering, bringing analytical thinking and a creative touch to my projects.</p>
+                <p class="display-10 mb-3">My journey began with a deep interest in programming before my bachelor’s studies. After gaining experience in the automotive and art industries, my passion for technology reignited, leading me to front-end development.</p>
+                <p class="display-10 mb-3">This site is a space to showcase my work as a developer and share some of my creative projects, including LEGO-inspired designs. I have an eye for detail, a commitment to collaboration, and an eagerness to learn.</p>
+                <p class="display-10 mb-3">Let’s create exceptional web experiences — your next developer is just a click away!</p>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-4">
+                        <a href="file/RESUME_ANEISSOFEA.pdf" class="btn btn-primary" download="RESUME_ANEISSOFEA.pdf" target="_blank">Download Resume</a>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">
-                    <div class="intro">
-                        <h4>FOOD ORDER WEBAPP</h4>
-                        <h5>A food ordering web app with two sections: User and Admin.</h5>
-                        <ul>
-                            <li>User: Add items to the cart, adjust quantities, and see updated menu items.</li>
-                            <li>Admin: Add or remove menu items.</li>
-                        </ul>
-                        <p class="note">Note: Work in progress.</p>
-                        <a href="https://food-order-webapp.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
+                    <div class="col-1">
+                        <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank" class="description-logo-container">
+                            <img class="description-logo" src="image\contact\linkedin-colored.png"/>
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">
-                    <div class="intro">
-                        <h4>NEWS WEBAPP</h4>
-                        <h5>A news app where users can search and favorite articles.</h5>
-                        <ul>
-                            <li>Users log in, search for news, and browse articles fetched via an API.</li>
-                            <li>Favorites are saved and displayed in the sidebar.</li>
-                        </ul>
-                        <p class="note">Note: Work in progress.<br/>Demo Username: sofea<br/>Demo Password: chrome123</p>
-                        <a href="https://news-webapp-snowy.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="project-card">
-                    <div class="intro">
-                        <h4>CONTACT MANAGER APP</h4>
-                        <h5>A contact management app built with API integration.</h5>
-                        <ul>
-                            <li>Involves prototyping, routing, API connections, and feature development.</li>
-                            <li>Includes incremental updates and refactoring.</li>
-                        </ul>
-                        <p class="note">Note: Still in progress.</p>
-                        <a href="https://contact-manager-webapp.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
+                    <div class="col-1">
+                        <a href="https://github.com/aneissofea" target="_blank" class="description-logo-container">
+                            <img class="description-logo" src="image\contact\github-coloredd.png"/>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- Projects Owl Carousel Section -->
-    <section class="projects-section container" id="projects">
-        <h2 class="title projects">projects</h2>
-        <div class="project-cards row center" >
-    
-            <!-- Owl Carousel -->
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-12 mt-3">
-                    <div class="owl-3-slider owl-carousel owl-theme">      
-                            
-                        <!-- <div class="item col-lg-3 col-md-6 mb-4 mb-4">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="image/web-design.jpg" class="img-sq-car" alt="" />
-                                    <div class="overlay-text text-white">
-                                        <h4 class="text-center">WEB DESIGN</h4>
-                                        <h5>A showcase of web design projects and prototypes.</h5>
-                                        <ul>
-                                            <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
-                                            <li>View full project details and interactive elements on Figma.</li>
-                                        </ul>
-                                        <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-danger" target="_blank">View designs in Figma</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="item col-lg-3 col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="intro">
-                                    <h4>WEB DESIGN</h4>
-                                    <h5>A showcase of web design projects and prototypes.</h5>
-                                    <ul>
-                                        <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
-                                        <li>View full project details and interactive elements on Figma.</li>
-                                    </ul>
-                                    <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-danger" target="_blank">View designs in Figma</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-3 col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="intro">
-                                    <h4>FOOD ORDER WEBAPP</h4>
-                                    <h5>A food ordering web app with two sections: User and Admin.</h5>
-                                    <ul>
-                                        <li>User: Add items to the cart, adjust quantities, and see updated menu items.</li>
-                                        <li>Admin: Add or remove menu items.</li>
-                                    </ul>
-                                    <p class="note">Note: Work in progress.</p>
-                                    <a href="https://food-order-webapp.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-3 col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="intro">
-                                    <h4>CREATIVE DESIGN</h4>
-                                    <h5>Past creative projects that I did</h5>
-                                    <ul>
-                                        <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
-                                        <li>View full project details and interactive elements on Figma.</li>
-                                    </ul>
-                                    <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-danger" target="_blank">View designs in Figma</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-3 col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="intro">
-                                    <h4>NEWS WEBAPP</h4>
-                                    <h5>A news app where users can search and favorite articles.</h5>
-                                    <ul>
-                                        <li>Users log in, search for news, and browse articles fetched via an API.</li>
-                                        <li>Favorites are saved and displayed in the sidebar.</li>
-                                    </ul>
-                                    <p class="note">Note: Work in progress.<br/>Demo Username: sofea<br/>Demo Password: chrome123</p>
-                                    <a href="https://news-webapp-snowy.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-lg-3 col-md-6 mb-4">
-                            <div class="project-card">
-                                <div class="intro">
-                                    <h4>CONTACT MANAGER APP</h4>
-                                    <h5>A contact management app built with API integration.</h5>
-                                    <ul>
-                                        <li>Involves prototyping, routing, API connections, and feature development.</li>
-                                        <li>Includes incremental updates and refactoring.</li>
-                                    </ul>
-                                    <p class="note">Note: Still in progress.</p>
-                                    <a href="https://contact-manager-webapp.vercel.app/" class="btn btn-danger" target="_blank">Demo</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- <div class="item mb-4">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <div class="intro overlay-text">
-                                        <h4 class="text-center">WEB DESIGN</h4>
-                                        <div class="text-left">
-                                            <h5>A showcase of web design projects and prototypes.</h5>
-                                            <ul>
-                                                <li>Explore design samples, wireframes, and UI/UX concepts I've created.</li>
-                                                <li>View full project details and interactive elements on Figma.</li>
+    <!-- Projects Section -->
+    <section class="projects-section rounded-30 container mt-5 pb-5 " id="projects">
+        <div class="bg-light rounded-30 py-5">
+            <h2 class="display-2 pb-5 pe-4 text-end text-black">projects</h2>
+            <div class="project-cards center">
+        
+                <!-- Owl Carousel -->
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-10 mt-3">
+                        <div class="owl-3-slider owl-carousel owl-theme">                                      
+                            <div class="item mb-4 portfolio">
+                                <div class="project-card">
+                                    <img src="image/projects/portfolio.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-2 pt-3 pb-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h4>PORTFOLIO SITE</h4>
+                                            <h5>A live site showcasing my projects and skills</h5>
+                                            <ul class="text-start">
+                                                <li>Designed and developed independently</li>
+                                                <li>Explore the source code on <a class="inline-link" href="https://github.com/aneissofea/Portfolio-2024" target="_blank"><b>GitHub</b></a></li>
                                             </ul>
                                         </div>
-                                        <a href="https://www.figma.com/design/OzPTu4X2DkbAejknxCOmnf/Aneis-Sofea's-Design-Samples?node-id=2012-1333&t=tA9p8lLyrSlxndIV-1" class="btn btn-danger" target="_blank">View designs in Figma</a>
+                                        <button type="button" class="btn btn-primary" data-modal-id="modalportfolio" id="openModalButton1">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4 food-app">
+                                <div class="project-card">
+                                    <img src="image/projects/food-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-2 pt-3 pb-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h4>FOOD WEBAPP</h4>
+                                            <h5>Pizza ordering app for Users and Admins.</h5>
+                                            <ul class="text-start">
+                                                <li><b>User:</b> Update items in the cart. </li>
+                                                <li><b>Admin:</b> Update menu items.</li>
+                                                <li>Explore the source code on <a class="inline-link" href="https://github.com/aneissofea/food-order-app" target="_blank"><b>Github</b></a></li>
+                                            </ul>
+                                        </div>
+                                        <a href="https://food-order-webapp.vercel.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4 web-design">
+                                <div class="project-card">
+                                    <img src="image/projects/web-design.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-2 pt-3 pb-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h4>WEB DESIGN</h4>
+                                            <h5>Mini showcase of web design projects.</h5>
+                                            <ul class="text-start">
+                                                <li>Explore design samples and UI/UX concepts I've created.</li>
+                                            </ul>
+                                        </div>
+                                        <a href="https://dribbble.com/aneissofea" class="btn btn-primary" target="_blank">Dribbble Account</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4 news-app">
+                                <div class="project-card">
+                                    <img src="image/projects/news-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-2 pt-3 pb-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h4>NEWS WEBAPP</h4>
+                                            <h5 class="px-0">Search and save favorite articles.</h5>
+                                            <ul class="text-start">
+                                                <li>Log in to search and browse news via API.</li>
+                                                <li>Save favorites in the sidebar.</li>
+                                                <li><b>Username:</b> sofea <b>password:</b> chrome123</li>
+                                                <!-- <li>Head to <a class="inline-link" href="https://github.com/aneissofea/news-webapp" target="_blank"><b>news app github repository</b></a></li> -->
+                                            </ul>
+                                        </div>
+                                        <a href="https://news-webapp-snowy.vercel.app/" class="btn btn-primary" target="_blank">Live Demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item mb-4 creative-works">
+                                <div class="project-card">
+                                    <img src="image/projects/creative-works.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center px-2 pt-3 pb-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h4>Bricks Works</h4>
+                                            <h5>Highlights of my past creative projects.</h5>
+                                            <ul class="text-start">
+                                                <li>Explore unique LEGO-inspired creations.</li>
+                                                <li>Exclusive content featured here.</li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="btn btn-primary" data-modal-id="modal2" id="openModalButton2">
+                                            See the Creations
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="item mb-4 contact-app">
+                                <div class="project-card">
+                                    <img src="image/projects/contact-app.jpg" class="img-sq-car" alt="" />
+                                    <div class="overlay-text text-white text-center pt-3 pb-2 d-flex flex-column justify-content-between">
+                                        <div>
+                                            <h4>CONTACT MANAGER APP</h4>
+                                            <h5>Manage contacts with a clean, simple UI and API integration.</h5>
+                                            <ul class="text-start">
+                                                <li>CRUD functionality: add, edit, view, and delete contacts.</li>
+                                                <!-- <li>Explore the source code on <a class="inline-link" href="https://github.com/aneissofea/contact-manager-app" target="_blank"><b>Github</b></a></li> -->
+                                            </ul>
+                                        </div>
+                                        <a href="https://github.com/aneissofea/contact-manager-app" class="btn btn-primary mx-2" target="_blank">Video Demo</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item mb-4">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">Proton</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-4">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">Toyota</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-4">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">BMW</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-4">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">Tesla</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-4 rounded-10">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">Honda</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-4 rounded-10">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">Mercedes</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item mb-4 rounded-10">
-                            <div class="card card-sq-car rounded-10 border-0">
-                                <div class="card-body p-0">
-                                    <img src="~/images/dark-grey.png" class="img-sq-car" alt="" />
-                                    <h5 class="text-center overlay-text mt-1">Audi</h5>
-                                </div>
-                            </div>
-                        </div> -->
-    
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills-section container text-center" id="skills">
-        <h2 class="title skills">skills</h2>
-        <div class="row">
-            <div class="col">
-                <img src="image\html-logo.png" alt="HTML5">
-                <div class="skill-icons-text">HTML5</div>
+    <section class="skills-section container text-center py-5" id="skills">
+        <h2 class="display-2 pb-5 mb-3">stacks</h2>
+        <div class="row pt-5">
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\html-logo.png" alt="HTML5">
+                <p class="skill-icons-text display-8">HTML5</p>
             </div>
-            <div class="col">
-                <img src="image\css-logo.png" alt="CSS3">
-                <div class="skill-icons-text">CSS</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\css-logo.png" alt="CSS3">
+                <p class="skill-icons-text display-8">CSS</p>
             </div>
-            <div class="col">
-                <img src="image\js-logo.png" alt="JavaScript">
-                <div class="skill-icons-text">Javascript</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\js-logo.png" alt="JavaScript">
+                <p class="skill-icons-text display-8">Javascript</p>
             </div>
-            <div class="col">
-                <img src="image\react-logo.png" alt="React">
-                <div class="skill-icons-text">React</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\react-logo.png" alt="React">
+                <p class="skill-icons-text display-8">React</p>
             </div>
-            <div class="col">
-                <img src="image\figma-logo.png" alt="React">
-                <div class="skill-icons-text">Figma</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\figma-logo.png" alt="React">
+                <p class="skill-icons-text display-8">Figma</p>
             </div>
-            <div class="col">
-                <img src="image\github-logo.png" alt="React">
-                <div class="skill-icons-text">Git</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\github-logo.png" alt="React">
+                <p class="skill-icons-text display-8">Git</p>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <img src="image\bootstrap-logo.png" alt="Bootstrap">
-                <div class="skill-icons-text">Bootstrap</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\bootstrap-logo.png" alt="Bootstrap">
+                <div class="skill-icons-text display-8">Bootstrap</div>
             </div>
-            <div class="col">
-                <img src="image\mui-logo.png" alt="Node.js">
-                <div class="skill-icons-text">Material UI</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\mui-logo.png" alt="Node.js">
+                <div class="skill-icons-text display-8">Material UI</div>
             </div>
-            <div class="col">
-                <img src="image\nodejs-logo.png" alt="C++">
-                <div class="skill-icons-text">Node JS</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\nodejs-logo.png" alt="C++">
+                <div class="skill-icons-text display-8">Node JS</div>
             </div>
-            <div class="col">
-                <img src="image\c++logo.png" alt="Arduino">
-                <div class="skill-icons-text">C++</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\c++logo.png" alt="Arduino">
+                <div class="skill-icons-text display-8">C++</div>
             </div>
-            <div class="col">
-                <img src="image\gcode-logo.png" alt="C++">
-                <div class="skill-icons-text">G-Code</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\gcode-logo.png" alt="C++">
+                <div class="skill-icons-text display-8">G-Code</div>
             </div>
-            <div class="col">
-                <img src="image\arduino-logo.png" alt="C++">
-                <div class="skill-icons-text">Arduino</div>
+            <div class="col col-md-2 col-3">
+                <img src="image\stacks\arduino-logo.png" alt="C++">
+                <div class="skill-icons-text display-8">Arduino</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section container text-center" id="contact">
-        <h2 class="title contact">contact</h2>
+    <section class="contact-section container text-center mb-5 pb-2" id="contact">
+        <h2 class="display-2">contact</h2>
         <form class="contact-form" action="https://formspree.io/f/xjkbnrrq" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Message" rows="4" required></textarea>
-            <button type="submit" class="btn btn-danger">SEND MESSAGE</button>
+            <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
         </form>
     </section>
 
     <!-- Footer Section -->
-    <footer class="text-center" id>
-        <ul class="social-links">
+    <footer class="text-center mt-2 pb-5 mb-5" id="footer">
+        <ul class="social-links d-flex justify-content-center">
             <li>
-                <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank">
-                    <div class="description-logo-container">
-                        <img class="description-logo" src="image\linkedin-colored.png"/>
-                    </div>
+                <a href="https://www.linkedin.com/in/aneis-sofea/" target="_blank" class="description-logo-container">
+                    <img class="description-logo" src="image\contact\linkedin-colored.png"/>
                 </a>
             </li>
             <li>
-                <a href="https://github.com/aneissofea" target="_blank">
-                    <div class="description-logo-container">
-                        <img class="description-logo" src="image\github-coloredd.png"/>
-                    </div>
+                <a href="https://github.com/aneissofea" target="_blank" class="description-logo-container">
+                    <img class="description-logo" src="image\contact\github-coloredd.png"/>
                 </a>
             </li>
             <li>
-                <a href="mailto:aneissofea@gmail.com?subject=Hi%20Sofea%20please%20work%20for%20me">
-                    <div class="description-logo-container">
-                        <img class="description-logo" src="image\gmail-logo.png"/>
-                    </div>
+                <a href="mailto:aneissofea@gmail.com?subject=Hi%20Sofea%20please%20work%20for%20me" class="description-logo-container">
+                    <img class="description-logo" src="image\contact\gmail-logo.png"/>
                 </a>
             </li>
             <li>
-                <a href="https://discordapp.com/users/907895366131777556" target="_blank">
-                    <div class="description-logo-container">
-                        <img class="description-logo" src="image\discord-logo.png"/>
-                    </div>
+                <a href="https://discordapp.com/users/907895366131777556" target="_blank" class="description-logo-container">
+                    <img class="description-logo" src="image\contact\discord-logo.png"/>
                 </a>
             </li>
         </ul>
     </footer>
 
+    <!-- Scroll to top button -->
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">^</button>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <!-- Bootstrap 5 JS, Popper.js, and Bootstrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    
+    <script src="script_new.js"></script>
 
 
 </body>
