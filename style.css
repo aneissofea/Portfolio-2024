@@ -201,7 +201,7 @@ body {
     position: relative;
     width: 60px;
     height: 34px;
-    background-color: #D7D7C0; /* Light switch background */
+    background-color: #D7D7C0 !important; /* Light switch background */
     border-radius: 34px;
     transition: background-color 0.4s;
 }
@@ -484,31 +484,31 @@ body.light-mode {
 body.light-mode .text-black {
     color: #D7D7C0 !important;
 }
-
 body.light-mode .text-white {
     color: #121212 !important;
 }
-
 body.light-mode .bg-light{
     background-color: #121212 !important;
 }
 .modal-body .text-black.light-mode {
     color: #D7D7C0 !important;
 }
+
 /* Navbar */
 .nav-link.light-mode {
     color: #121212;
+}
+body.light-mode .toggle-label {
+    background-color: #121212 !important; /* Light switch background */
 }
 
 /* Projects Section */
 .project-card.light-mode .overlay-text {
     background-color: rgba(215, 215, 192, 0.95); /* Light mode transparency */
 }
-
 .project-card.light-mode h4, .project-card.light-mode h5, .project-card.light-mode ul li{
     color: #121212;
 }
-
 body.light-mode .owl-theme .owl-nav [class*=owl-]:hover {
     background-color: #D7D7C0 !important;
     color: #121212 !important;
@@ -663,8 +663,4 @@ body.light-mode .owl-theme .owl-nav [class*=owl-]:hover {
     .ui-kit{
         text-align: center !important;
     }
-}
-
-@media (max-width: 767px) {
-
 }
