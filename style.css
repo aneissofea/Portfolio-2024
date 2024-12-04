@@ -33,6 +33,9 @@ body {
 .btn-primary:hover {
     background-color: #ac2f33;
 }
+.btn-primary:active {
+    background-color: #ac2f33 !important;
+}
 .btn-secondary {
     background-color: transparent;
     border: 3px solid #121212;
@@ -176,11 +179,12 @@ body {
     text-decoration: none;
     color: #D7D7C0;
 }
-
 .nav a:hover{
-    color: #CE383C;
+    color: #CE383C !important;
 }
-
+.nav {
+    --bs-nav-link-hover-color: var(#CE383C) !important;
+}
 /*-------------toggle switch------------*/
 .toggle-container {
     position: absolute;
